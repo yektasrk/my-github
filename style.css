@@ -1,0 +1,140 @@
+/*  
+    Add background image to cover the entire browser window 
+*/
+body {
+    background: url("images/background.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*
+    main holds all objects in the page using flex.
+*/
+.main {
+    width: 50%;
+    min-height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*
+    Header specifies fieldset header style
+*/
+.header {
+    position: relative;
+    color: darkblue;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+/* 
+    profile div (right side)
+*/
+#profile {
+    width: 60%;
+}
+
+/*
+    form div (left side)
+*/
+#form {
+    width: 30%;
+    text-align: center;
+}
+
+/*
+    fieldset styles for profile and form fields
+*/
+.fieldset {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 200%;
+}
+
+/*
+    info div is holding avatar and basic_info side by side, using flex
+*/
+#info {
+    display: flex;
+}
+
+/*
+    styles for each side in info div
+*/
+.side {
+    flex: 1;
+    padding: 10px;
+}
+
+/*
+    styles for github image (avatar)
+*/
+#avatar {
+    width: 40%;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+/*
+    styles for bio
+*/
+#bio {
+    text-align: left;
+    padding: 10px;
+}
+
+/*
+    basic_info holds name, blog, location on right side
+*/
+#basic_info {
+    font-size: large;
+    font-weight: bold;
+}
+
+/*
+    All Buttons unic style
+*/
+.button {
+    width: 50%;
+    height: 25px;
+    text-align: center;
+    margin: 5px;
+    background-color: darkslateblue;
+    color: white;
+    border-radius: 10px;
+}
+
+/*
+    All inputs unic style
+*/
+.input {
+    width: 70%;
+    text-align: center;
+}
+
+/*
+    Error section 
+*/
+.error {
+    display: none;
+    color: red;
+}
+
+/*
+    info message section 
+*/
+.msg {
+    display: none;
+    color: blue;
+}

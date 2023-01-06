@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Github Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- showing profile on the right side -->
+        <div id="profile">
+            <fieldset class="fieldset">
+                <legend class="header">Github Profile</legend>
+                <div id="info">
+                    <img class="side" id="avatar"></img>
+                    <div class="side" id="basic_info">
+                        <div id="name"></div>
+                        <a id="blog" target="_blank"></a>
+                        <div id="location"></div>
+                    </div>
+                </div>
+                <div id="bio"></div>
+            </fieldset>
+        </div>
+        <!-- form on the left side -->
+        <div id="form">
+            <form>
+                <fieldset class="fieldset">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" class="input" required>
+                    <button id="submit" class="button">submit</button><br>
+                    <div class="error"></div>
+                    <div class="msg"></div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
